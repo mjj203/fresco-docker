@@ -95,7 +95,8 @@ class MapMapbox extends React.Component {
 				path: [style.getIn(['id'])],
 			})
 		}
-
+		
+		MapboxGl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js', null, true);
 		const map = new MapboxGl.Map({
 			attributionControl:false,
 			logoPosition:'bottom-right',
